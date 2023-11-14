@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+  
+        .btn-dark {
+    color: #fff; 
+}
+
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+            <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+          </svg> NOVEDADES</a></li>
+          <li><a href="GtankeW.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg> GUIAS</a></li>
+          <li><a href="Donaciones.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg> DONACIONES</a></li>
+          <li><a href="#" class="nav-link px-2 text-white"></a></li>
+        </ul>
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+          <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary" id="loginButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="margin-right: 10px;">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg >Iniciar</button>
+          <button type="submit" class="btn btn-warning" id="signupButton">Crear</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div  class="filtros">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" class="filtros2">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 200px;">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+          </svg>
+   </button>
+   <div class="dropdown-menu"style="text-align: center;" >
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+   </div>
+   <li class="nav-item">
+    <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+            World Of Warcraft
+        </button>
+        <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+          <a class="dropdown-item" href="GtankeW.html">Tanke</a>
+          <a class="dropdown-item" href="Cazador.html">Cazador</a>
+          <a class="dropdown-item" href="mago.html">Wizard</a>
+        </div>
+    </div>
+</li>
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Path of exile
+  </button>
+  <div class="dropdown-menu" style="text-align: center;">
+    <a class="dropdown-item" href="GPoe1.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3.html">wizard</a>
+  </div>
+        </li>
+        <li class="nav-item">
+         <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    League of legends
+  </button>
+  <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="GLol1.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3.html">Runas Mago</a>
+  </div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Dark Souls
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="darksouls.1.html">Caballero</a>
+  <a class="dropdown-item" href="darksouls.2.html">Guerrero</a>
+  <a class="dropdown-item" href="darksouls.3.html">Vagabundo</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Genshin Impact
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="GgenshinFurina.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelan.html">Yelan</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+CS2
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Cs2.html">Aim</a>
+  <a class="dropdown-item" href="mov.html">Movement</a>
+  <a class="dropdown-item" href="Line up.html">Line UP</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Elden Ring
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Samurai.html">Samurai</a>
+  <a class="dropdown-item" href="Guerreroel.html">Guerrero</a>
+  <a class="dropdown-item" href="Bandido.html">Bandido</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Albion Online
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Guerrero.html">Tanke</a>
+  <a class="dropdown-item" href="Explorador.html">Explorador</a>
+  <a class="dropdown-item" href="Magoal.html">wizard</a>
+</div>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <li><a>Consejos</a>
+            <li>Adaptabilidad al Campeón: Las runas deben adaptarse al campeón que estás jugando y a tu estilo de juego. Algunos campeones funcionan mejor con runas de daño, mientras que otros pueden beneficiarse más de runas defensivas o de utilidad.</li><br>
+      <li>Versatilidad: Considera runas que sean versátiles y útiles en diferentes situaciones. Por ejemplo, runas que proporcionan resistencia adicional o curación pueden ser útiles en una variedad de enfrentamientos.</li><br>
+      <li>Situacionalidad: No hay un conjunto de runas "universal" que funcione para todos los campeones en todas las situaciones. Ajusta tus elecciones de runas según el rol que estás desempeñando, el emparejamiento en la línea, y el equipo enemigo.</li><br>
+      <li>Actualizaciones del Juego: Mantente informado sobre las actualizaciones del juego. Las modificaciones en las runas y sus estadísticas pueden cambiar la eficacia de ciertas combinaciones. Asegúrate de revisar las notas de parche para estar al tanto de los cambios.</li><br>
+      <li>Combina las Runas: Asegúrate de que las runas que elijas se complementen entre sí y con tu estilo de juego. Por ejemplo, si tomas una runa que potencia tus habilidades de curación, también podrías querer elegir objetos que mejoren esas curaciones.</li><br>
+      <li>Adaptación a la Partida: Considera cambiar tus runas dependiendo de cómo se desarrolle la partida. Por ejemplo, si estás enfrentándote a un equipo con mucho control de masas, podrías optar por runas que te proporcionen tenacidad.</li><br>
+      <li>Prueba y Error: Experimenta con diferentes conjuntos de runas para descubrir lo que mejor se adapta a tu estilo de juego y preferencias. La práctica y la experiencia personal son fundamentales para encontrar las runas que te resulten más efectivas.</li><br>
+<li>Recuerda que las runas son solo una parte de tu construcción en el juego. La elección de objetos, la toma de decisiones en el juego y la cooperación con tu equipo también son factores cruciales para el éxito en League of Legends.</li><br><hr>
+      
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: center;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">League of Legend</h1>
+        <h2 style="text-align: center;">
+          Runas de Mago
+        </h2>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+<h5>Runas Primarias (Senda de la Precisión):</h5>
+<br><img class="image1" src="carpetalol/presicion3.png"><br>
+<li> 
+   <p> Conquistador (Conqueror): Proporciona sostenibilidad en peleas prolongadas y un aumento de daño con el tiempo.
+     Es particularmente efectivo en magos que pueden infligir daño sostenido en lugar de ráfagas.</p>
+
+   <p>Supercuración (Overheal): Te permite curarte cuando tienes un exceso de vida, lo que puede ser útil para la supervivencia durante las peleas.</p>
+    
+   <p>Tenacidad (Legend: Tenacity): Aumenta la tenacidad con acumulaciones, lo que te hace más resistente a las habilidades de control de masas (CC).</p>
+    
+   <p> Tenacidad (Legend: Tenacity): Aumenta la tenacidad con acumulaciones, lo que te hace más resistente a las habilidades de control de masas (CC).</p>
+    <p>Golpe de gracia (Coup de Grace): Aumenta tu daño contra campeones enemigos con poca vida, lo que puede ser útil para asegurar eliminaciones.</p>
+ </li>
+
+ <h5>Runas Secundarias (Senda de la Inspiración):</h5>
+ <br> <img src="carpetalol/inspiracion2.png"><br><br>
+ <li>
+  <p>Calzado mágico (Magical Footwear): Te otorga botas gratuitas después de un tiempo, lo que te permite invertir oro en otros objetos más temprano en el juego.</p>
+
+  <p>Entrega de galletas (Biscuit Delivery): Proporciona galletas que restauran vida y maná extra, ayudándote a mantener el maná y la salud durante la fase de líneas.</p>
+ </li>
+ <h5>Bonificaciones:</h5>
+ <br> <img src="carpetalol/bonificacion2.png"><br><br>
+ <li>
+  <p> Fuerza adaptativa (Adaptive Force): Puedes elegir daño de habilidad o poder de ataque según las necesidades de tu campeón.</p>
+
+  <p>Enfoque (Focus): Proporciona resistencia adicional al daño de habilidades.</p>
+
+    <p>Vitalidad (Vitality): Aumenta tu vida máxima.</p>
+
+ </li>
+
+ <li>
+    Estas runas están diseñadas para fortalecer tus habilidades de apoyo y tu supervivencia en el juego. 
+    Asegúrate de ajustarlas según el campeón específico y la situación del juego.
+     También es importante estar al tanto de las actualizaciones del juego,
+     ya que estas pueden afectar la eficacia de ciertas runas.
+ </li>
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  var loginButton = document.getElementById("loginButton");
+  var signupButton = document.getElementById("signupButton");
+  loginButton.addEventListener("click", function() {
+    window.location.href = "Login.html";
+  });
+  signupButton.addEventListener("click", function() {
+    window.location.href = "register.html";
+  });
+</script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

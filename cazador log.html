@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+        .btn-dark {
+    color: #fff; 
+}
+.image
+{
+  width:600px ;
+  height:400px ;
+}
+.image2
+{
+width:800px ;
+height:400px ;
+}
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<script type="text/Javascript" src="./js/Js.js"></script>
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="GBGLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+            <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+          </svg> NOVEDADES</a></li>
+          <li><a href="GtankeWLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg> GUIAS</a></li>
+          <li><a href="DonacionesLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg> DONACIONES</a></li>
+          <li><a href="#" class="nav-link px-2 text-white"></a></li>
+        </ul>
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+          <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+        </form>
+
+    
+            <div class="text-end">
+                <button type="submit" class="btn btn-outline-light me-2" id="AccountButton">Account</button>
+                <button type="submit" class="btn btn-warning" id="signupButton">Cerrar sesión</button>
+              </div>
+      </div>
+    </div>
+  </header>
+  
+  <div  class="filtros">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" class="filtros2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-right: 200px;">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+              </svg>
+       </button>
+       <div class="dropdown-menu"style="text-align: center;" >
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+       </div>
+       <li class="nav-item">
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                World Of Warcraft
+            </button>
+            <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+                <a class="dropdown-item" href="GtankeWLogin.html">Tanke</a>
+                <a class="dropdown-item" href="cazador log.html">cazador</a>
+                <a class="dropdown-item" href="mago log.html">Wizard</a>
+            </div>
+        </div>
+    </li>
+
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        Path of exile
+      </button>
+      <div class="dropdown-menu" style="text-align: center;">
+<a class="dropdown-item" href="GPoe1Login.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2Login.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3Login.html">wizard</a>
+      </div>
+            </li>
+            <li class="nav-item">
+             <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        League of legends
+      </button>
+      <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GLol1Login.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2Login.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3Login.html">Runas Mago</a>
+      </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Dark Souls
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+      <a class="dropdown-item" href="Darksoul.1login.html">Caballero</a>
+      <a class="dropdown-item" href="Darksoul.2login.html">Guerrero</a>
+      <a class="dropdown-item" href="Darksoul.3login.html">Vagabundo</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Genshin Impact
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GgenshinFurina.log.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.loghtml.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelanLog.html">Yelan</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    CS2
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Cs2 log.html">Aim</a>
+    <a class="dropdown-item" href="mov log.html">Movement</a>
+    <a class="dropdown-item" href="Line up log.html">Line UP</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Elden Ring
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="Samurai log.html">Samurai</a>
+    <a class="dropdown-item" href="Guerreroel log.html">Guerrero</a>
+    <a class="dropdown-item" href="Bandido log.html">Bandido</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Albion Online
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Guerrero log.html">Tanke</a>
+    <a class="dropdown-item" href="Explorador log.html">Explorador</a>
+    <a class="dropdown-item" href="Magoal log.html">wizard</a>
+    </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <li><a >Consejos<p>PARA LOS JUGADORES MÁS EXPERIMENTADOS:</p>
+            <li>Si estás en un grupo con sacerdotes, generalmente no tendrás que preocuparte si ellos acumulan más amenaza que tú. Ellos pueden usar “desvanecerse” y su amenaza disminuirá significativamente, permitiendo que los enemigos vuelvan a atacarte. En la mayoría de los casos, el enemigo no atacará al sacerdote en lo absoluto. Pero si acumula demasiada amenaza, debes prestar mucha atención para que el monstruo no lo ataque.</li>
+      <li>Los guerreros que están especializados en armas puedes obtener más información sobre las distintas especializaciones en la página de World of Warcraft:<li><a href="http://worldofwarcraft.com/info/basics/talents.html">worldofwarcraft.com</a></li>
+      obtienen una nueva habilidad al nivel 30 llamada “golpes de barrido”. Usar esto en combinación con rajar es ideal cuando estás en combate con dos enemigos o más. Aunque solamente estás atacando a un enemigo, es como si estuvieras golpeando a ambos y por el doble de daño.</li>
+      <li>Para jugadores de nivel 30 o más. Si un enemigo está huyendo de ti para llamar refuerzos, como lo hacen muchas veces, puedes cambiar a actitud rabiosa RÁPIDAMENTE y usar interceptar. Esto hará que corras velozmente hacia ellos, chocarlos y marearlos por un momento, lo suficiente para matarlos.</li>
+      <li>Para jugadores de nivel 32 o más. Cuando estés en un combate JcJ o peleando contra un monstruo que tenga la habilidad de miedo, es mejor si usas ira rabiosa, que te vuelve inmune a todos los efectos de miedo y parálisis. Es una habilidad ideal para huir de cazadores, guerreros, brujos y muchas otras clases de jugadores</li><br><hr>
+
+
+      
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: center;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">World of Warcraft</h1>
+        <h2 style="text-align: center;">
+            Guia de Cazador
+        </h2>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+    <br><img class="image"src="https://wow.zamimg.com/uploads/screenshots/normal/254458-cazador.jpg"><br><br>
+<li>
+    Los cazadores combinan elementos de la naturaleza y astutos artilugios como arcos y armas de fuego para acabar con sus enemigos. Son capaces de enviar una ráfaga de flechas o una gran cantidad de proyectiles para obtener un daño bruto sostenido, pero también pueden hacer gala de un gran repertorio de habilidades especiales capaces de aturdir, desorientar, silenciar, dormir, envenenar o drenar maná.
+
+Un enemigo a tener en cuenta, sobre todo si estamos en algún servidor PVP.
+</li>
+<br><br><img class="image"src="https://www.guiaswow.com/wp-content/uploads/2010/10/hunter-wowart.jpg"><br><br>
+<li>
+    La primera de las decisiones que debemos tomar como Cazador es cuál de las razas elegiremos entre las 5 disponibles. Bien es sabido por todos que ciertas razas tienden a ser mejores que otras por culpa del desequilibrio causado por ciertas habilidades raciales.
+
+Aun así, a menos que queráis competir por el World First del reino, cualquier raza puede aportar lo necesario para hacer cualquier tipo de contenido. Nunca debemos olvidar que World of Warcraft Classic es una experiencia MMORPG completa y lo mejor es sentirse identificado con el personaje con el que vamos a compartir tantísimas horas.
+
+Por un lado, en la Horda tendríamos:
+
+Taurens.
+Orcos.
+Trolls.
+Mientras que en la Alianza solo tendríamos:
+
+Elfos de la noche.
+Enanos.
+Cada una de estas razas dará un toque especial a nuestro cazador, debido a sus habilidades raciales y Pasivas. En esta guía hablaré sobre las mejores razas (según diferentes fuentes), fijándonos en el aspecto competitivo del juego.
+
+Por parte de la Horda tenemos a los Trolls y en el bando de la Alianza tenemos a los Elfos de la Noche.       
+ </li>
+     <br> <img class="image"src="https://www.wowchakra.com/wp-content/uploads/2020/08/WowChakraLegenCazador.jpg"><br><br>
+ <li>
+      TROL
+
+Habilidades raciales:
+
+Iracundia: aumenta tu velocidad de ataque de un 10 a un 30%. Con salud máxima el aumento de velocidad es de un 10% con un efecto mayor hasta de un 30% si estás gravemente herido cuando activas Iracundia. Dura 10 segundos.
+Regeneración: aumenta la velocidad de regeneración de salud en un 10%. Durante el combate puede seguir un 10% de la regeneración de salud total.
+Matanza de bestias: daño causado contra bestias aumentado en un 5%.
+Especialización en lanzamiento: aumenta la habilidad con armas arrojadizas en 5 puntos.
+Especialización en arcos: aumenta la habilidad con armas de arco en 5 puntos.
+Hay un error muy extendido a la hora de usar esta habilidad y es que los jugadores suelen castearla cuando aún tienen su salud completa o demasiado alta. De esta forma solo se benefician de un 10% de velocidad de ataque. Por lo tanto, lo ideal sería esperar a tener la salud lo más baja posible y de esta forma obtener el máximo porcentaje.
+ELFOS DE LA NOCHE
+
+Habilidades raciales:
+
+Fusión de las sombras: actívalo para escurrirte entre las sombras, reduce la posibilidad de que los enemigos detecten tu presencia. Dura hasta que se cancela o al moverse. Cualquier amenaza se restaura frente a los enemigos que están en combate al anular este efecto.
+Prontitud: probabilidad de esquivar aumentada en un 1%.
+Espíritu de fuego fatuo: al morir transforma en un fuego fatuo aumentando la velocidad en un 50%.
+Resistencia a la naturaleza: resistencia a la Naturaleza aumentada en 10 puntos.
+En este caso, el único motivo que me ha llevado a elegir a los Elfo de la Noche ha sido su apariencia, ya que no hay una opción realmente clara sobre qué raza elegir.
+
+Ambas clases están más orientadas al PvP. Sin embargo, los Elfos de la Noche cuentan con un bonus de +9 de Agilidad base respecto a los enanos. Además, Fusión de las sombras no solo nos permitirá ocultarnos mientras nuestra mascota destroza a nuestros enemigos, sino que también, nos permitirá salir de combate y usar ciertas habilidades u objetos que de otro modo no podríamos usar.
+</li>
+      <br><img class="image"src="https://3.bp.blogspot.com/-sxAvTBSNt5o/UyGoMVIjF9I/AAAAAAAAAGw/-afgkMzUZVI/s1600/punte.jpg"><br><br>
+<li>
+      Una vez tenemos claro cuáles son nuestras habilidades raciales el siguiente paso sería saber cuáles son nuestras estadísticas principales. En World of Warcraft Classic volveremos a lidiar con ciertas estadísticas que no aparecen en Battle for Azeroth, como es el ejemplo del Índice de golpe.
+
+Como bien indica su nombre, esta habilidad aumentará el porcentaje de acierto de nuestros ataques, y nuestra prioridad será subirla al 9%.
+
+Golpe 9% > Agilidad > G. Crítico > Aguante / Intelecto
+Índice de golpe (9%) > Agilidad (1 Agilidad = 2 Poder ataque a distancia “+.019% Crítico”) > Crítico.
+53 Agilidad = 1% Golpe Crítico.
+Una vez llegado al cap. de índice de golpe, nuestra siguiente prioridad será equipar la máxima Agilidad posible para incrementar la probabilidad de Golpe Crítico. Las siguientes estadísticas a tener en cuenta son Intelecto y Aguante.
+
+1 Aguante = +10 puntos de Vida
+1 Intelecto = 15 Mana
+Cada jugador optará por una estadística diferente en función de la modalidad que juegue. Para PvE daremos prioridad a la estadística Intelecto, debido a que el principal recurso del cazador en World of Warcraft Classic es el maná.
+
+En cambio, en entornos PvP es preferible priorizar el aguante y de esta forma aumentar nuestra salud máxima.
+</li>
+     <br> <img class="image2"src="https://i.gyazo.com/69a37071352f2a743ea658fa01c494b8.png"><br><br>
+<li>
+        La mejor especialización para conseguir llegar al máximo nivel en World of Warcraft Classic es, como no podía ser de otra forma, la de Cazador Bestias. Este dependerá casi al 100% de su mascota, por lo que, en vez de mejorar nuestras habilidades de combate, optaremos por mejorar las estadísticas de nuestras mascotas con talentos como:
+
+Entrenamiento en aguante: aumenta la salud de nuestra mascota hasta un 15%
+Rapidez de bestias: aumenta 30% la velocidad de movimiento de tu mascota en zonas exteriores
+Ira de bestias: pone iracunda a tu mascota para que cause un 50% de daño extra durante 18 segundos. Mientras está iracunda, la bestia no siente piedad, remordimiento ni miedo y no se detendrá a no ser que la maten.
+Niveles 1 - 26: Bestias
+10: Aspecto de Halcón.
+11: E. en aguante.
+12 - 13: A. de Halcón.
+14 - 15: E. en aguante.
+16 - 17: Revivir mascota.
+18 - 20: Pellejo grueso.
+21: Encontrar camino.
+22: Rapidez de bestias.
+23 - 24: Furia desatada.
+25 - 26: Ferocidad.
+Niveles 27 - 45: Bestias
+
+27 - 28: Aspecto de Halcón.
+29: Ferocidad.
+30: Intimidación.
+31-33: Ferocidad.
+34 - 35: D. de bestias .
+36 - 38: Frenesí.
+39: Furia desatada.
+40: Ira de bestias.
+41: Frenesí.
+42 - 43: Furia desatada.
+44 - 45: Vinculo de Espíritu.
+46: E. en Aguante.
+Niveles 47 - 57: Puntería
+
+47 - 51: Eficacia.
+52 - 56: Disparos Letales.
+57: Tiro de Puntería.
+Niveles 58 - 60: Bestias
+
+58: E. en aguante.
+59: Sanar mascota.
+60: Frenesí.
+</li>
+     <br> <img class="image2"src="https://i.gyazo.com/d7851d3d403b02952fdaad7a25d6ab74.png"><br><br>
+<li>
+      Esta build solo es aconsejable usarla una vez tengamos nuestro Índice de golpe al (9%). Por lo tanto, deja de ser viable durante el leveo, aunque muy a tener en cuenta si nuestro objetivo es raidear.
+
+A la hora de raidear en World of Warcraft Classic, el trabajo en equipo es clave. Por ese motivo cuantas más utilidades puedas aportar a un grupo de raid, más probabilidades tendrás de ser aceptado. Os quiero hablar de dos talentos que considero claves en este build.
+
+Matanza de monstruo: aumenta todos los daños infligidos a las bestias, gigantes y dragonantes en un 1% y aumenta el daño crítico causado a los mismos objetivos en un 1% extra.
+Aura de disparo certero: esta habilidad aumentará el Poder de ataque de todos los miembros del grupo en un radio de 45 metris y dura 30 minutos.
+Tanto en Guarida de Ala negra, como en Núcleo de Magma la mayoría de enemigos a los que enfrentaremos serán gigantes o dragonantes. Matanza de monstruo hará del cazador una clase muy codiciada gracias a ese daño extra proporcionado.
+
+Por otro lado, Aura de disparo certero otorga 50 puntos de poder de ataque hasta un total de 5 miembros, habilidad que podremos combinar con talentos de otras clases como escalofrío invernal del Mago Escarcha.
+</li>
+   <br>  <img class="image"src="https://evelongames.com/wp-content/uploads/2022/10/arquero-wow.jpg"><br><br>
+<li>
+  Al igual que en World of Warcraft Retail, en Classic, los consumibles son una parte muy importante si queremos sacar el máximo rendimiento a nuestro personaje.
+
+En Classic no sólo encontraremos las típicas mejoras a través de pociones, encantamientos o trastos de ingeniería, sino que también, ciertos jefes de mundo o raid nos otorgarán beneficios como Bendición de Jefe de Guerra (el cual otorgará a todos los jugadores que estén presentes en el momento de entregar la misión en Orgrimmar, y que consistirá en un bonus, el cual aumentará nuestra velocidad de ataque cuerpo a cuerpo un 15%, 300 puntos de salud y nos otorgara 10 puntos de regeneración de maná cada 5 segundos, el efecto dura 2 horas).
+
+Ahora os dejaré una lista de los consumibles esenciales:
+
+Elixir de la mangosta: aumenta la agilidad en 25 puntos y la probabilidad de conseguir un impacto crítico en un 2% durante 1 hora. (3 segundos de tiempo de reutilización).
+Poderío juju: aumenta el poder de ataque en 40 puntos durante 10 minutos. (1 minuto de tiempo de reutilización).
+Calamar a la parrilla:restaura 874.8 puntos de salud durante 27 segundos. Debes permanecer sentado mientras comes. Si comes durante 10 segundos también aumentarás tu agilidad en 10 puntos durante 10 minutos.
+Poción de maná sublime: restaura entre 1350-2250 puntos de maná. (2 minutos de tiempo de reutilización).
+Runa demoníaca: Restaura 900 a 1500 puntos de maná con un consumo de 600 a 1000 puntos de vida. (2 minutos de tiempo de reutilización)
+Flechas y perdigones: no olvides que en World of Warcraft Classic tu munición no es ilimitada. Úsala con precaución y no olvides tener siempre a mano un buen puñado de flechas.
+Carcaj: ¿Y las flechas tendremos que guardarlas en algún sitio, no? Este objeto ira en la casilla de bolsa y según su rareza puede otorgarnos diferentes cualidades.
+</li>
+     <br> <img class="image"src="https://www.wowchakra.com/wp-content/uploads/2020/07/WowChakraMascotaCazador.jpg"><br><br>
+<li>
+      Desuello:
+
+Permite obtener cuero, escamas y pellejos de bestias derrotadas, incluyendo componentes raros como cuero de demosaurio y escamas de dragón negro.
+Ideal para cazadores que realizan contenido en solitario, ya que facilita la obtención de materiales valiosos que pueden venderse en la subasta.
+Ingeniería:
+
+Los ingenieros pueden fabricar una variedad de objetos únicos y útiles.
+Algunos objetos destacados incluyen:
+Carga de zapador goblin: Inflige daño de fuego a enemigos cercanos y a ti mismo.
+Pollo de batalla gnomo: Crea un gallo de batalla para luchar por ti.
+Dragonizo de arcanita: Activa un dragonizo de arcanita para luchar durante 1 minuto.
+Bomba Arcana: Drena maná y silencia a los objetivos alcanzados por la explosión.
+Estas profesiones ofrecen ventajas únicas para tu cazador en Classic. La elección entre desuello y ingeniería dependerá de tu preferencia y estilo de juego, ya sea enfocándote en obtener valiosos materiales o aprovechando las ingeniosas creaciones de un ingeniero.
+</li>
+      <br><img class="image"src="https://cdna.artstation.com/p/assets/images/images/000/229/264/large/michael-dashow-alyessa-ravensong-final-1200x931.jpg?1412135753"><br><br>
+<li>Familia de Mascotas Domables:
+
+En Classic, solo puedes domesticar mascotas del tipo Bestia. Otras familias de mascotas no están disponibles en esta versión del juego.
+Nivel de Mascotas y Vulnerabilidad:
+
+No hay re-escalado de nivel para las mascotas en Classic. Solo puedes domesticar bestias de tu nivel o inferior. Al usar la habilidad de domesticar, el cazador se vuelve vulnerable, perdiendo el 100% de la armadura durante la canalización.
+Uso Estratégico de Habilidades:
+
+Al domesticar mascotas más poderosas, es recomendable usar habilidades como Disparo de Concusión, Aguijón de Dracoleón o Trampa Congelante para obtener ventajas. Colaborar con druidas o magos para aplicar polimorfia o hibernación también es útil.
+Alimentando a tu Mascota:
+
+En Classic, debes alimentar a tu mascota para mantenerla feliz y aumentar su daño:
+Feliz: 125% de daño.
+Contento: 100% de daño.
+Triste: 75% de daño.
+Puedes usar seis tipos de alimentos, como pan, pescado, queso, frutas, setas y carne.
+Entrenamiento de Mascotas:
+
+Las mascotas en Classic tienen una barra de experiencia que aumenta en combate. Dejan de ganar experiencia cuando alcanzan el nivel del cazador. Algunas habilidades se deben enseñar a través de entrenadores de mascotas.
+Habilidades Adicionales:
+
+Algunas habilidades que puedes enseñar a tu mascota incluyen Bramido, Gran Aguante, Armadura Natural y varias resistencias elementales.
+Mascotas Recomendadas:
+
+Lobos son esenciales para mazmorras o bandas debido a su habilidad Aullido Furioso.
+Felinos son excelentes para el leveo debido a su daño, velocidad y capacidad para interrumpir a los enemigos.
+Serpientes aladas son versátiles con habilidades como Aliento de Relámpago, que ignora la defensa base de los jefes de banda.
+
+</li><br><hr>
+
+<h1>Advertencias</h1><hr>
+<li>Adicción:
+
+WoW es conocido por ser adictivo. Puede consumir mucho tiempo y afectar otras áreas de tu vida, como el trabajo, la escuela y las relaciones personales. Establece límites de tiempo y asegúrate de equilibrar el juego con otras responsabilidades.
+</li> 
+Salud Física:
+
+Jugar durante largos períodos puede llevar a problemas de salud, como fatiga visual, dolor de espalda y sedentarismo. Recuerda tomar descansos regulares, estirarte y cuidar de tu salud física.
+<li>Costo Financiero:
+
+El juego requiere una suscripción mensual y puede incluir expansiones adicionales de pago. Controla tus gastos relacionados con el juego y asegúrate de que se ajusten a tu presupuesto.
+</li> 
+<li>Contenido Explícito:
+
+WoW contiene elementos de fantasía y violencia que podrían no ser apropiados para todas las edades. Asegúrate de que el contenido del juego sea adecuado para ti o para aquellos a quienes permites jugar, especialmente si hay menores involucrados.
+</li> 
+
+
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    var AccountButton = document.getElementById("AccountButton");
+    var signupButton = document.getElementById("signupButton");
+    AccountButton.addEventListener("click", function() {
+      window.location.href = "#";
+    });
+    signupButton.addEventListener("click", function() {
+      window.location.href = "GBG.html";
+    });
+  </script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

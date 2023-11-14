@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+    .image1
+    {
+      height: 300px;
+      width: 550px;
+    }
+        .btn-dark {
+    color: #fff; 
+}
+
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="GBGLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+                <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+              </svg> NOVEDADES</a></li>
+              <li><a href="GtankeWLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+              </svg> GUIAS</a></li>
+              <li><a href="DonacionesLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+              </svg> DONACIONES</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"></a></li>
+            </ul>
+            <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+              <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+              <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+                <button type="submit" class="btn btn-outline-light me-2" id="AccountButton">Account</button>
+                <button type="submit" class="btn btn-warning" id="signupButton">Cerrar sesión</button>
+              </div>
+          </div>
+        </div>
+      </header>
+  
+  <div  class="filtros">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" class="filtros2">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 200px;">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+          </svg>
+   </button>
+   <div class="dropdown-menu"style="text-align: center;" >
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+   </div>
+   <li class="nav-item">
+    <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+            World Of Warcraft
+        </button>
+        <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+          <a class="dropdown-item" href="GtankeWLogin.html">Tanke</a>
+          <a class="dropdown-item" href="cazador log.html">cazador</a>
+          <a class="dropdown-item" href="mago log.html">Wizard</a>
+        </div>
+    </div>
+</li>
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Path of exile
+  </button>
+  <div class="dropdown-menu" style="text-align: center;">
+    <a class="dropdown-item" href="GPoe1Login.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2Login.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3Login.html">wizard</a>
+  </div>
+        </li>
+        <li class="nav-item">
+         <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    League of legends
+  </button>
+  <div class="dropdown-menu"style="text-align: center;" >
+   <a class="dropdown-item" href="GLol1Login.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2Login.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3Login.html">Runas Mago</a>
+  </div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Dark Souls
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="Darksouls.1login.html">Caballero</a>
+<a class="dropdown-item" href="Darksouls.2login.html">Guerrero</a>
+<a class="dropdown-item" href="Darksouls.3login.html">Pícaro</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Genshin Impact
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="GgenshinFurina.log.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.loghtml.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelanLog.html">Yelan</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+CS2
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Cs2 log.html">Aim</a>
+  <a class="dropdown-item" href="mov log.html">Movement</a>
+  <a class="dropdown-item" href="Line up log.html">Line UP</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Elden Ring
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Samurai log.html">Samurai</a>
+  <a class="dropdown-item" href="Guerreroel log.html">Guerrero</a>
+  <a class="dropdown-item" href="Bandido log.html">Bandido</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Albion Online
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Guerrero log.html">Tanke</a>
+  <a class="dropdown-item" href="Explorador log.html">Explorador</a>
+  <a class="dropdown-item" href="Magoal log.html">wizard</a>
+</div>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <a>Consejos</a><br>
+            <li>Dominio del Bloqueo: Aprovecha al máximo tu capacidad para bloquear con el escudo. Aprende a leer los patrones de ataque de los enemigos y utiliza el bloqueo para minimizar el daño recibido.</li><br>
+      <li>Practica el Parry: Como caballero, puedes ser eficaz al realizar parrys. Practica esta técnica para contrarrestar los ataques enemigos y realizar contraataques potentes.</li><br>
+      <li>Gestión de Estamina: La estamina es clave para tu movilidad y resistencia. Aprende a administrarla eficientemente para evitar quedarte sin aliento en medio de un combate.</li><br>
+      <li>Equipamiento Resistente: Utiliza armaduras pesadas para maximizar tu resistencia física. Encuentra un equilibrio entre la protección y la movilidad según tus preferencias.</li><br>
+      <li>Estudio de Patrones de Enemigos: Cada enemigo y jefe tiene patrones de ataque únicos. Estudia sus movimientos para anticipar y reaccionar de manera efectiva.</li><br>
+      <li>Fortalecimiento de Armas: Mejora y fortalece tu arma principal. La calidad de tu arma es esencial para enfrentarte a enemigos fuertes y jefes.</li><br>
+      <li>Gestión de Estus Flask: Utiliza sabiamente tus frascos de Estus. Aprende a encontrar momentos seguros para curarte y asegúrate de tener suficientes cargas antes de enfrentarte a desafíos importantes.</li><br>
+      <li>Experimenta con Habilidades Mágicas: Aunque los caballeros tienden a depender más del combate cuerpo a cuerpo, puedes experimentar con magias defensivas o milagros para mejorar tu versatilidad.</li><br><hr>
+      
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: ;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">Dark souls</h1>
+        <br> <img src="https://miro.medium.com/v2/resize:fit:1400/0*zXK8anXy5lSHQfp9" width="850" height="500" ><br><br>
+        <h4 style="text-align: ;">
+          Caballero
+        </h4>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+    
+<li>
+   En la serie de juegos "Dark Souls", la clase de caballero es una opción popular para aquellos que prefieren un enfoque más equilibrado en fuerza, resistencia y habilidades defensivas. Aquí tienes una guía general para jugar como caballero en "Dark Souls". Ten en cuenta que estas sugerencias pueden variar dependiendo de tu estilo de juego y preferencias personales.
+</li>
+
+
+<h5>Equipamiento:</h5>
+
+<li> 
+   <p> Usa armaduras pesadas para una mayor resistencia, pero asegúrate de no sobrepasar el límite de carga para mantener la agilidad. La agilidad es crucial para esquivar ataques enemigos.
+Elige un escudo resistente para bloquear ataques enemigos. Un escudo con 100% de reducción de daño físico es ideal.
+Opta por armas de cuerpo a cuerpo, como espadas o mazas. Asegúrate de que te sientas cómodo con el movimiento y la velocidad de tu arma.</p>
+
+
+</li>
+
+ <h5>Estadisticas:</h5>
+ 
+ <li>
+  <p>Aumenta la Vitalidad para tener más salud y la Resistencia para más resistencia.
+Incrementa la Fuerza si prefieres armas más pesadas o la Destreza si prefieres armas más rápidas y ágiles.
+La Resistencia al Fuego y a la Magia pueden ser útiles según la zona en la que te encuentres</p>
+ </li> 
+ <br> <img src="https://media.vandal.net/m/5-2018/20185416439_1.jpg" ><br><br>
+ <h5>Estilo de juego:</h5>
+
+ <li>
+  <p> Aprende a rodar y esquivar eficientemente. La esquiva es clave para evitar daño, ya que no todos los ataques pueden ser bloqueados con un escudo.
+Practica la parada con tu escudo para contrarrestar los ataques enemigos.
+Sé paciente y observador. Estudia los patrones de ataque de los enemigos antes de lanzarte al combate.</p>
+
+ </p>
+
+ </li>
+ 
+ <h5>Gestión de recursos:</h5>
+ <li>
+  <p>Recoge y utiliza las Estus Flasks sabiamente. Asegúrate de tener siempre algunas disponibles antes de adentrarte en zonas peligrosas.
+Administra tu energía y no agotes tu resistencia al atacar o esquivar. Un ataque bien medido es más efectivo que una ráfaga sin control.</p>
+ </li>
+ <br> <img src="https://frikadasmil.files.wordpress.com/2011/10/dark-souls.jpg" width="850" height="500" ><br><br>
+ <h5>Exploración:</h5>
+ <li>
+  <p>Explora minuciosamente cada área para encontrar atajos, objetos y bonfires (hogueras), que son puntos de guardado y curación.
+Habla con los personajes no jugadores para obtener pistas y a veces recompensas.</p>
+ </li>
+ <li>
+  <h5>Mejora de equipo:</h5>
+  <p>Utiliza las almas que obtienes derrotando enemigos para mejorar tus estadísticas y equipo.
+Encuentra herreros y forja o mejora tus armas y equipo siempre que sea posible.</p>
+ </li>
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    var AccountButton = document.getElementById("AccountButton");
+    var signupButton = document.getElementById("signupButton");
+    AccountButton.addEventListener("click", function() {
+      window.location.href = "#";
+    });
+    signupButton.addEventListener("click", function() {
+      window.location.href = "GBG.html";
+    });
+  </script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+        .btn-dark {
+    color: #fff; 
+}
+
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="GBGLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+            <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+          </svg> NOVEDADES</a></li>
+          <li><a href="GtankeWLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg> GUIAS</a></li>
+          <li><a href="DonacionesLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg> DONACIONES</a></li>
+          <li><a href="#" class="nav-link px-2 text-white"></a></li>
+        </ul>
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+          <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+        </form>
+    
+            <div class="text-end">
+                <button type="submit" class="btn btn-outline-light me-2" id="AccountButton">Account</button>
+                <button type="submit" class="btn btn-warning" id="signupButton">Cerrar sesión</button>
+              </div>
+      </div>
+    </div>
+  </header>
+  
+  <div  class="filtros">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" class="filtros2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-right: 200px;">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+              </svg>
+       </button>
+       <div class="dropdown-menu"style="text-align: center;" >
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+       </div>
+       <li class="nav-item">
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                World Of Warcraft
+            </button>
+            <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+                <a class="dropdown-item" href="GtankeWLogin.html">Tanke</a>
+                <a class="dropdown-item" href="cazador log.html">cazador</a>
+                <a class="dropdown-item" href="mago log.html">Wizard</a>
+            </div>
+        </div>
+    </li>
+
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        Path of exile
+      </button>
+      <div class="dropdown-menu" style="text-align: center;">
+<a class="dropdown-item" href="GPoe1Login.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2Login.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3Login.html">wizard</a>
+      </div>
+            </li>
+            <li class="nav-item">
+             <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        League of legends
+      </button>
+      <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GLol1Login.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2Login.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3Login.html">Runas Mago</a>
+      </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Dark Souls
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+      <a class="dropdown-item" href="Darksouls.1login.html">Caballero</a>
+      <a class="dropdown-item" href="Darksouls.2login.html">Guerrero</a>
+      <a class="dropdown-item" href="Darksouls.3login.html">Vagabundo</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Genshin Impact
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GgenshinFurina.log.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.loghtml.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelanLog.html">Yelan</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    CS2
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Cs2 log.html">Aim</a>
+    <a class="dropdown-item" href="mov log.html">Movement</a>
+    <a class="dropdown-item" href="Line up log.html">Line UP</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Elden Ring
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="Samurai log.html">Samurai</a>
+    <a class="dropdown-item" href="Guerreroel log.html">Guerrero</a>
+    <a class="dropdown-item" href="Bandido log.html">Bandido</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Albion Online
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Guerrero log.html">Tanke</a>
+    <a class="dropdown-item" href="Explorador log.html">Explorador</a>
+    <a class="dropdown-item" href="Magoal log.html">wizard</a>
+    </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <li><a >Consejos<p>PARA LOS JUGADORES MÁS EXPERIMENTADOS:</p>
+            <li>Si estás en un grupo con sacerdotes, generalmente no tendrás que preocuparte si ellos acumulan más amenaza que tú. Ellos pueden usar “desvanecerse” y su amenaza disminuirá significativamente, permitiendo que los enemigos vuelvan a atacarte. En la mayoría de los casos, el enemigo no atacará al sacerdote en lo absoluto. Pero si acumula demasiada amenaza, debes prestar mucha atención para que el monstruo no lo ataque.</li>
+      <li>Los guerreros que están especializados en armas puedes obtener más información sobre las distintas especializaciones en la página de World of Warcraft:<li><a href="http://worldofwarcraft.com/info/basics/talents.html">worldofwarcraft.com</a></li>
+      obtienen una nueva habilidad al nivel 30 llamada “golpes de barrido”. Usar esto en combinación con rajar es ideal cuando estás en combate con dos enemigos o más. Aunque solamente estás atacando a un enemigo, es como si estuvieras golpeando a ambos y por el doble de daño.</li>
+      <li>Para jugadores de nivel 30 o más. Si un enemigo está huyendo de ti para llamar refuerzos, como lo hacen muchas veces, puedes cambiar a actitud rabiosa RÁPIDAMENTE y usar interceptar. Esto hará que corras velozmente hacia ellos, chocarlos y marearlos por un momento, lo suficiente para matarlos.</li>
+      <li>Para jugadores de nivel 32 o más. Cuando estés en un combate JcJ o peleando contra un monstruo que tenga la habilidad de miedo, es mejor si usas ira rabiosa, que te vuelve inmune a todos los efectos de miedo y parálisis. Es una habilidad ideal para huir de cazadores, guerreros, brujos y muchas otras clases de jugadores</li><br><hr>
+
+
+      
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: center;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">World of Warcraft</h1>
+        <h2 style="text-align: center;">
+          Guia de Tanke
+        </h2>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+    <br><img src="https://www.wikihow.com/images/thumb/2/27/Tank-in-World-of-Warcraft-Step-1.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-1.jpg"><br><br>
+<li>
+        PARA LOS GUERREROS: lo más importante que tiene que tener un tanque guerrero es un escudo, ya que mejora tu armadura significativamente y muchas de tus habilidades defensivas requieren uno. Asegúrate de que tu guerrero esté especializado en protección.
+</li>
+<br><br><img src="https://www.wikihow.com/images/thumb/1/16/Tank-in-World-of-Warcraft-Step-2.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-2.jpg"><br><br>
+<li> 
+        Hablando de actitud defensiva, es una buena idea que solamente uses esta actitud de combate a menos que tengas mucha experiencia siendo tanque y puedas usar las otras efectivamente.
+ </li>
+     <br> <img src="https://www.wikihow.com/images/thumb/a/a3/Tank-in-World-of-Warcraft-Step-3.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-3.jpg"><br><br>
+ <li>
+En situaciones donde trates de aumentar tu nivel de amenaza y quieras disminuir la cantidad de daño que recibas (tal vez el sanador es pésimo o no tiene suficiente mana), la mejor opción es usar la habilidad bloquear con escudo y luego revancha. Al principio uno podría pensar que esta combinación no sirve para nada pero es súper útil en el Templo Sumergido. Simplemente usa Bloquear con escudo y espera a que revancha se active, luego utiliza esta habilidad y espera a que puedas volver a utilizar el bloqueo. No solamente bloqueas (dependiendo de la velocidad de ataque del monstruo) de 10% a 30% del daño que recibes, sino que también saldrás disparado a la primera posición y tendrás mucha más amenaza de la que necesitas
+</li>
+      <br><img src="https://www.wikihow.com/images/thumb/5/5c/Tank-in-World-of-Warcraft-Step-4.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-4.jpg"><br><br>
+<li>
+      Si tienes problemas al dividir la amenaza con otro tanque, utiliza grito desafiante, activa golpes de barrido (si puedes usarla) y usa atronar en conjunto con rajar varias veces (como si tu vida dependiera de ello y ¡probablemente este sea el caso!)
+</li>
+     <br> <img src="https://www.wikihow.com/images/thumb/8/8e/Tank-in-World-of-Warcraft-Step-5Bullet1.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-5Bullet1.jpg"><br><br>
+<li>
+        Recuerda usar tu grito de batalla. Es una habilidad muy útil, pero la gente se olvida de ello. Solo cuesta 10 de ira y obtienes muchísimo poder de ataque. Puede significar la diferencia entre matar a 5 enemigos en un minuto o tardarte 5 minutos en matar a un enemigo.
+        Puedes evitar los golpes críticos de otros enemigos si tienes 490 de defensa. Otros jugadores pueden darte golpes críticos en JcJ, pero es necesario que tengas 490 de defensa al jugar dentro de una mazmorra o banda.
+</li>
+     <br> <img src="https://www.wikihow.com/images/thumb/3/3d/Tank-in-World-of-Warcraft-Step-6.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-6.jpg"><br><br>
+<li>
+      Siempre mantén 3 cargas de hendir armadura (usando devastar) en tu enemigo, recuerda que debes usar grito desmoralizador y atronar, además de mantener las cargas de las habilidades que debiliten a los monstruos activas, especialmente en las mazmorras de dificultad heroica y en la fase final del juego.
+</li>
+   <br>  <img src="https://www.wikihow.com/images/thumb/3/3a/Tank-in-World-of-Warcraft-Step-7.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-7.jpg"><br><br>
+<li>
+      El aguante es un factor muy importante. Consigue objetos que tengas tanto aguante como sea posible, para que puedas resistir más golpes sin que te mueras ¡y tu sanador tenga más tiempo para curarte!
+</li>
+     <br> <img src="https://www.wikihow.com/images/thumb/b/bd/Tank-in-World-of-Warcraft-Step-8.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-8.jpg.webp"><br><br>
+<li>
+        Cuando llegues a nivel 70 y seas un tanque, enfócate en mejorar tu reputación a exaltado con las distintas facciones de Terrallende para obtener el mejor equipamiento para tanques con oro y sin tener que esperar a completar las mazmorras finales. En vez de tener un dolor de cabeza esperando a que algo te toque, podrás conseguir el equipamiento de forma garantizada y mejorar tu experiencia de juego.
+</li>
+      <br><img src="https://www.wikihow.com/images/thumb/5/53/Tank-in-World-of-Warcraft-Step-13.jpg/v4-728px-Tank-in-World-of-Warcraft-Step-13.jpg.webp"><br><br>
+<li>
+       Mantén todas tus bendiciones activas. La única ventaja que un paladín tiene sobre un guerrero en mazmorras de bajo nivel son las bendiciones grupales. Asegúrate de que todo el grupo las tenga. Bendícete primero y luego hazlo con tu grupo. Cuando veas que tu bendición está a punto de expirar, vuelve a aplicarla tanto en ti mismo como en el resto del grupo (lo más seguro es que ellos la necesiten también).
+</li><br><hr>
+
+<h1>Advertencias</h1><hr>
+<li>Tratar de ser un tanque que no tiene un escudo o usa la forma de oso nunca funcionará. Asegúrate de tener tu escudo listo antes de especializarte como tanque (aunque tal vez puedas hacerlo si tienes un nivel bajo).</li> 
+<li>Si el sanador muere durante la batalla, lo más seguro es que mueras tú también.</li> 
+<li>Si no sigues el procedimiento adecuado para ser un tanque, lo más seguro es que te boten del grupo o todos mueran.</li> 
+<li>Un mago o brujo poderoso que esté bien equipado es la mejor manera de matar al Archimago Arugal, porque se teletransporta mucho y no podrás mantener su atención. Sus hechizos de tipo sombra hacen mucho daño si tu sanador no es bueno. Incluso la batalla en sí te pone a un alto riesgo de morir, ya que es uno de los jefes más poderosos del juego. El parche 2.3 lo debilitó bastante y ahora tiene la misma dificultad que otros jefes del mismo nivel.</li><hr>
+
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    var AccountButton = document.getElementById("AccountButton");
+    var signupButton = document.getElementById("signupButton");
+    AccountButton.addEventListener("click", function() {
+      window.location.href = "#";
+    });
+    signupButton.addEventListener("click", function() {
+      window.location.href = "GBG.html";
+    });
+  </script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

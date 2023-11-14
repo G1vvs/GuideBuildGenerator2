@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+    #signupButton {
+    background-color: #cf8f17;
+}
+ .sidebar ul{
+  list-style: none;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+    .ratio ratio-16x9
+    {
+      width: 560;
+       height: 315;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+     textarea {
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+    }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+    
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+            <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+          </svg> NOVEDADES</a></li>
+          <li><a href="GtankeW.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg> GUIAS</a></li>
+          <li><a href="Donaciones.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg> DONACIONES</a></li>
+          <li><a href="#" class="nav-link px-2 text-white"></a></li>
+        </ul>
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+          <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary" id="loginButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="margin-right: 10px;">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg >Iniciar</button>
+          <button type="submit" class="btn btn-warning" id="signupButton">Crear</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Top Donadores:</h2>
+        <ul>
+          <div ></div> 
+          <li><a style="text-align": justify;>
+         </a></li>  
+         <li style="text-align:center;"><a><div data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__card"><div data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__top-donor"><svg data-v-7e6f5858="" data-v-5fc78b94="" width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-7e6f5858="" data-v-5fc78b94="" d="M12.6549 1.72548C13.2051 0.610608 14.7949 0.61061 15.3451 1.72548L18.3533 7.8207C18.5718 8.26342 18.9941 8.57027 19.4827 8.64126L26.2092 9.61868C27.4395 9.79745 27.9308 11.3094 27.0405 12.1772L22.1732 16.9217C21.8196 17.2663 21.6583 17.7628 21.7418 18.2494L22.8908 24.9487C23.1009 26.174 21.8148 27.1085 20.7144 26.5299L14.698 23.367C14.261 23.1372 13.739 23.1372 13.302 23.367L7.28564 26.5299C6.1852 27.1085 4.89905 26.174 5.10922 24.9487L6.25824 18.2494C6.3417 17.7628 6.18037 17.2663 5.82684 16.9217L0.959518 12.1772C0.0692422 11.3094 0.560509 9.79745 1.79084 9.61868L8.51732 8.64126C9.00588 8.57027 9.42823 8.26342 9.64672 7.8207L12.6549 1.72548Z" fill="#09161D"></path> <path data-v-7e6f5858="" data-v-5fc78b94="" d="M15.5361 9.75781V19H13.397V12.1699L11.2896 12.7856V11.1606L15.3394 9.75781H15.5361Z" fill="white"></path></svg> <div data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__top-donor-text"><span data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__top-donor-name tip-font"> deveraxy </span> <span data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__top-donor-amount tip-font">  </span></div> <div data-v-7e6f5858="" data-v-5fc78b94="" class="leaderboard2022__top-donor-label tip-font">
+          Top Tipper
+        </div></div></div></a></li>
+          <hr>
+         <table data-v-35ecfd30="" data-v-7e6f5858="" class="leaderboard2022-table" data-v-5fc78b94=""><thead data-v-35ecfd30=""><tr data-v-35ecfd30=""><th data-v-35ecfd30="" class="leaderboard2022-table__th leaderboard2022-table__th--rank tip-font">RANK</th> <th data-v-35ecfd30="" class="leaderboard2022-table__th leaderboard2022-table__th--username tip-font">USERNAME</th> <th data-v-35ecfd30="" class="leaderboard2022-table__th leaderboard2022-table__th--amount tip-font">AMOUNT</th></tr></thead> <tbody data-v-35ecfd30=""><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--2">
+          2
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">ezequiel</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--3">
+          3
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">wobbuffet2727</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--4">
+          4
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">DarkGFX</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--5">
+          5
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">SSG_LUCKASS</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--6">
+          6
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">VenVion</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--7">
+          7
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">ssc0p3</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--8">
+          8
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">daartss</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--9">
+          9
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">MauriVfx</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr><tr data-v-35ecfd30=""><td data-v-35ecfd30="" class="leaderboard2022-table__td"><div data-v-35ecfd30="" class="leaderboard2022-table__rank tip-font leaderboard2022-table__rank--10">
+          10
+        </div></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__name tip-font">team_dz</span></td> <td data-v-35ecfd30="" class="leaderboard2022-table__td"><span data-v-35ecfd30="" class="leaderboard2022-table__amount tip-font"></span></td></tr></tbody></table>
+         <hr>
+
+<br>
+<a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Contenido principal -->
+    <div class="col-md-9">
+      <main class="contenido">
+        <h1 style="text-align:center;">Donacion A GuideBuildGenerator </h1>
+        <p>
+          <h5 style="text-align:center;">Para Mantener Esta Pagina</h5>
+          <div data-v-5fc78b94="" data-v-dbab3e28="" data-v-ef064c20="" class="tip-card tip tip-page-container__tip" style="padding: 32px; --padding-mobile: 16px;"><div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__banner"></div> <div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__main"><div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__head"><h4 data-v-dbab3e28="" data-v-5fc78b94="" class="tip__title tip-font">Tip</h4> <!----></div> <!----> <!----> <div data-v-22e74121="" data-v-dbab3e28="" class="tip-user-input tip__user-input" data-v-5fc78b94=""><div data-v-22e74121="" class="input-wrapper"><input data-v-22e74121="" id="username" type="text" name="username" autocorrect="off" spellcheck="false" autocomplete="off" maxlength="25" placeholder="Username" aria-label="Username" class="tip-user-input__input form-error"></div> <span data-v-22e74121="" class="tip-user-input__error"> Invalid username </span></div> <div data-v-6dccd187="" data-v-dbab3e28="" class="tip-money tip__money" data-v-5fc78b94=""><button data-v-6dccd187="" class="tip-money__currency-button"><span data-v-6dccd187="" class="tip-font">USD</span> <div data-v-6dccd187=""><i data-v-6dccd187="" class="fa fa-caret-down" aria-hidden="true"></i></div></button> <input data-v-6dccd187="" name="tip amount" type="number" min="0" step="0.5" placeholder="5.00" class="tip-money__input tip-font"> <div data-v-6dccd187="" class="tip-money__presets"><button data-v-6dccd187="" class="tip-money__preset-button tip-font">
+      $1
+    </button><button data-v-6dccd187="" class="tip-money__preset-button tip-font">
+      $3
+    </button><button data-v-6dccd187="" class="tip-money__preset-button tip-font">
+      $5
+    </button><button data-v-6dccd187="" class="tip-money__preset-button tip-font">
+      $10
+    </button></div> <!----></div> <div data-v-6ba86b77="" data-v-dbab3e28="" class="tip-freq tip__frequency tip-freq--default" data-v-5fc78b94=""><div data-v-6ba86b77="" class="tip-freq__item tip-freq__item--one-time tip-freq__item--selected"><span data-v-6ba86b77="" class="tip-font">One-time</span></div> <div data-v-6ba86b77="" class="tip-freq__item tip-freq__item--monthly"><span data-v-6ba86b77="" class="tip-font">Monthly
+      <i data-v-6ba86b77="" class="icon-information has-tooltip" aria-describedby="tooltip_ku4dlv7u2q"></i></span></div></div> <div data-v-3575bfda="" data-v-dbab3e28="" class="message tip__info-form flex tip__message" data-v-5fc78b94=""><div data-v-3575bfda="" class="input-wrapper flex-grow"><textarea data-v-3575bfda="" id="input-donation-message" rows="2" name="message" maxlength="255" placeholder="Your message here..." class="tip--donation-message tip-font has-value"></textarea> <!----> <ul data-v-3575bfda="" class="message__flair"><li data-v-3575bfda="" class=" has-tooltip"><svg data-v-3575bfda="" width="24" height="24" viewBox="0 0 24 24"><path data-v-3575bfda="" fill="currentColor" d="M22 4H2C0.896 4 0 4.896 0 6V19C0 20.105 0.896 21 2 21H22C23.104 21 24 20.105 24 19V6C24 4.896 23.104 4 22 4ZM9.375 10.75H5.875V14.25H7.625V13.375H6.75V11.625H9.375V14.25C9.375 15.215 8.59 16 7.625 16H5.875C4.91 16 4.125 15.215 4.125 14.25V10.75C4.125 9.785 4.91 9 5.875 9H9.375V10.75ZM13.75 10.75H12.875V14.25H13.75V16H10.25V14.25H11.125V10.75H10.25V9H13.75V10.75ZM19.875 10.75H16.375V11.625H19V13.375H16.375V16H14.625V10.75C14.625 9.785 15.41 9 16.375 9H19.875V10.75Z"></path></svg></li> <li data-v-3575bfda="" id="emote__toggle" class=" has-tooltip"><div data-v-46c2456a="" data-v-3575bfda=""><svg fill="none" height="21" viewBox="0 0 20 21" width="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="a" cx="8.03248" cy="6.14753" gradientUnits="userSpaceOnUse" r="12.0637">
+    <stop offset="0" stop-color="#ffdf30"></stop>
+    <stop offset="1" stop-color="#ffb82e"></stop>
+  </radialGradient>
+  <linearGradient id="b">
+    <stop offset=".00132565" stop-color="#3c2200"></stop>
+    <stop offset="1" stop-color="#7a4400"></stop>
+  </linearGradient>
+  <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="5.69133" x2="5.69133" xlink:href="#b" y1="5.68936" y2="4.63564"></linearGradient>
+  <linearGradient id="d">
+    <stop offset=".00132565" stop-color="#7a4400"></stop>
+    <stop offset="1" stop-color="#643800"></stop>
+  </linearGradient>
+  <radialGradient id="e" cx="0" cy="0" gradientTransform="matrix(.39291832 1.35719799 -.87808336 .25421128 6.44294 8.45724)" gradientUnits="userSpaceOnUse" r="1" xlink:href="#d"></radialGradient>
+  <linearGradient id="f">
+    <stop offset=".00132565" stop-color="#3c2200"></stop>
+    <stop offset="1" stop-color="#512d00"></stop>
+  </linearGradient>
+  <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="6.73501" x2="6.73501" xlink:href="#f" y1="6.95693" y2="8.31407"></linearGradient>
+  <linearGradient id="h" gradientUnits="userSpaceOnUse" x1="14.3089" x2="14.3089" xlink:href="#b" y1="5.68912" y2="4.6354"></linearGradient>
+  <radialGradient id="i" cx="0" cy="0" gradientTransform="matrix(.39291832 1.35719799 -.87808144 .25421072 12.9733 8.45759)" gradientUnits="userSpaceOnUse" r="1" xlink:href="#d"></radialGradient>
+  <linearGradient id="j" gradientUnits="userSpaceOnUse" x1="13.265" x2="13.265" xlink:href="#f" y1="6.95705" y2="8.31419"></linearGradient>
+  <radialGradient id="k" cx="9.99992" cy="15.081" gradientUnits="userSpaceOnUse" r="5.50881" xlink:href="#d"></radialGradient>
+  <radialGradient id="l" cx="0" cy="0" gradientTransform="matrix(4.5656 0 0 1.38018 10.0825 17.0188)" gradientUnits="userSpaceOnUse" r="1">
+    <stop offset=".2479" stop-color="#f00"></stop>
+    <stop offset="1" stop-color="#c10000"></stop>
+  </radialGradient>
+  <linearGradient id="m" gradientUnits="userSpaceOnUse" x1="17.0191" x2="3.06615" y1="13.9485" y2="13.9485">
+    <stop offset=".00132565" stop-color="#3c2200"></stop>
+    <stop offset=".5" stop-color="#512d00"></stop>
+    <stop offset="1" stop-color="#3c2200"></stop>
+  </linearGradient>
+  <radialGradient id="n" cx="9.99982" cy="13.5442" gradientUnits="userSpaceOnUse" r="12.081">
+    <stop offset=".00132565" stop-color="#fff"></stop>
+    <stop offset="1" stop-color="#a8bbbd"></stop>
+  </radialGradient>
+  <path d="m10 20.2002c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10.000005-10-10.000005-5.52285 0-10 4.477155-10 10.000005 0 5.5228 4.47715 10 10 10z" fill="url(#a)"></path>
+  <path d="m10 20.2002c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10.000005-10-10.000005-5.52285 0-10 4.477155-10 10.000005 0 5.5228 4.47715 10 10 10z" fill="#ffd79c" opacity=".5"></path>
+  <path d="m7.80002 5.01896c0-.4-.43255-.65116-1.17674-.65116-.63256 0-2.02326.34884-2.98139 1.58139-.17675.22791.09302.35349.26976.20466.5907-.50233 2.16744-1.14419 3.4-1.00931.49302.05582.48837-.12558.48837-.12558z" fill="url(#c)"></path>
+  <path d="m6.73476 9.87916c.53174 0 .9628-.65179.9628-1.45582 0-.80402-.43106-1.45581-.9628-1.45581-.53173 0-.96279.65179-.96279 1.45581 0 .80403.43106 1.45582.96279 1.45582z" fill="url(#e)"></path>
+  <path d="m6.73476 7.45588c.41396 0 .7721.35814.9628.89302-.01396-.78604-.43721-1.4186-.9628-1.4186-.52558 0-.94883.63256-.96279 1.4186.1907-.53023.54884-.89302.96279-.89302z" fill="url(#g)"></path>
+  <path d="m12.2002 5.01872c0-.4.4326-.65117 1.1767-.65117.6326 0 2.0233.34884 2.9814 1.5814.1768.22791-.093.35349-.2697.20465-.5907-.50232-2.1675-1.14419-3.4-1.0093-.4931.05581-.4884-.12558-.4884-.12558z" fill="url(#h)"></path>
+  <path d="m13.2653 9.87928c.5317 0 .9628-.65179.9628-1.45581 0-.80403-.4311-1.45582-.9628-1.45582-.5318 0-.9628.65179-.9628 1.45582 0 .80402.431 1.45581.9628 1.45581z" fill="url(#i)"></path>
+  <path d="m13.2653 7.456c-.414 0-.7721.35814-.9628.89302.0139-.78604.4372-1.4186.9628-1.4186s.9488.63256.9628 1.4186c-.1907-.53023-.5489-.89302-.9628-.89302z" fill="url(#j)"></path>
+  <path d="m16.7534 11.8932c-.0744-.0279-.1581-.0325-.2326-.0093-2.1116.6047-4.3023.907-6.5162.907-2.21399 0-4.40934-.307-6.51632-.907-.07907-.0232-.15813-.0186-.23255.0093-.22791.093-.5907.4372-.11163 1.7535v.0047c.70698 1.6837 2.58139 4.6418 6.85581 4.6418 4.26509 0 6.13949-2.9628 6.86509-4.6418.4744-1.321.1163-1.6652-.1116-1.7582z" fill="url(#k)"></path>
+  <path d="m10 17.8234c1.7721 0 3.1023-.5442 4.0977-1.2884-1.093-.493-2.4419-.8139-4.0977-.8139s-3.00463.3256-4.09766.8232c.99535.7349 2.32558 1.2791 4.09766 1.2791z" fill="url(#l)"></path>
+  <path d="m16.6186 11.8652c-.014 0-.0279 0-.0465.0047-2.1303.6139-4.3396.9256-6.57678.9256-2.23721 0-4.44651-.3117-6.57675-.9256-.01395-.0047-.0279-.0047-.04651-.0047-.14418.014-.83256.1582-.24186 1.7861v.0046c.28837.6791.76744 1.5675 1.51628 2.3814-.70233-.8325.16279-1.293 1.70233-1.1069 1.53953.186 3.64651.1906 3.64651.1906s2.10228-.0046 3.64648-.1906c1.5396-.1861 2.4047.2744 1.7024 1.1069.7488-.8139 1.2279-1.7023 1.5162-2.3814v-.0046c.5907-1.6326-.0976-1.7768-.2418-1.7861z" fill="url(#m)"></path>
+  <path d="m15.4324 14.1536c.586-.1255 1.0279-.6139 1.0837-1.2139l.0558-.5861c-2.1302.6-4.3395.907-6.57207.907-2.23256 0-4.44186-.307-6.5721-.907l.05582.5861c.05581.5953.49767 1.0837 1.08372 1.2139 1.77674.3861 3.6.5768 5.43256.5768 1.83257 0 3.65577-.1954 5.43257-.5768z" fill="url(#n)"></path>
+</svg></div></li> <!----> <li data-v-3575bfda="" class="tip-font has-tooltip"><div data-v-3575bfda="" class="message__max tip-font">255</div></li></ul></div></div> <!----> <div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__custom"><div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__sub-head"><h5 data-v-dbab3e28="" data-v-5fc78b94="" class="tip__subtitle">Customize your donation</h5> <div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__head-items"><aside data-v-dbab3e28="" data-v-5fc78b94="" class="tip__pro-text color-tip-text tip-font">Stand out for <amount>$5.99/month</amount></aside> <i data-v-dbab3e28="" data-v-5fc78b94="" class="icon-question has-tooltip"></i></div></div> <div data-v-020200b2="" data-v-dbab3e28="" class="tip__sub-section pro-effects__default-template" data-v-5fc78b94=""><div data-v-020200b2="" class="tip-gifs__head mb-2"><div data-v-020200b2="" class="flex flex-v-center"><div data-v-020200b2=""><div data-v-67341a0e="" data-v-020200b2="" class="tip-gifs__toggle-enable"><div data-v-67341a0e="" class="flex flex-v-center"><div data-v-67341a0e="" tabindex="0" class="s-status-switch s-status-switch"><div class="s-status-switch__paddle s-status-switch__paddle--small"></div> <label>Add a GIF to your donation alert</label> </div></div></div></div> <!----></div> <div data-v-2754e30a="" data-v-020200b2="" class="tip-image-pile"><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-gifs-1.png&quot;); z-index: 3; animation: 0.3s ease 0s 1 normal none running slide-right; border-color: var(--tip-card-bg); outline: 2px solid var(--tip-card-bg);"></div><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-gifs-2.png&quot;); z-index: 2; animation: 1s ease 0s 1 normal none running slide-right; border-color: var(--tip-card-bg); outline: 2px solid var(--tip-card-bg);"></div><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-gifs-3.png&quot;); z-index: 1; animation: 1s ease 0s 1 normal none running slide-right; border-color: var(--tip-card-bg); outline: 2px solid var(--tip-card-bg);"></div></div></div> <!----></div> <div data-v-1433eed6="" data-v-dbab3e28="" class="pro-effects tip__sub-section pro-effects__default-template" data-v-5fc78b94=""><div data-v-1433eed6="" class="pro-effects__head flex mb-2"><div data-v-1433eed6=""><div data-v-67341a0e="" data-v-1433eed6="" class="tip-pro-effects__toggle-enable tip-font"><div data-v-67341a0e="" class="flex flex-v-center"><div data-v-67341a0e="" tabindex="0" class="s-status-switch s-status-switch"><div class="s-status-switch__paddle s-status-switch__paddle--small"></div> <label>Add an effect to your donation alert</label> </div></div></div></div> <div data-v-2754e30a="" data-v-1433eed6="" class="tip-image-pile"><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-pro-1.png&quot;); z-index: 3; animation: 0.3s ease 0s 1 normal none running slide-right; border-color: rgb(234, 236, 237); outline: 2px solid var(--tip-card-bg);"></div><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-pro-2.png&quot;); z-index: 2; animation: 1s ease 0s 1 normal none running slide-right; border-color: rgb(234, 236, 237); outline: 2px solid var(--tip-card-bg);"></div><div data-v-2754e30a="" class="tip-image-pile__image" style="background-image: url(&quot;https://cdn.streamlabs.com/static/imgs/tip/tip-pro-3.png&quot;); z-index: 1; animation: 1s ease 0s 1 normal none running slide-right; border-color: rgb(234, 236, 237); outline: 2px solid var(--tip-card-bg);"></div></div></div> <!----></div></div> <div data-v-ab6ec970="" data-v-dbab3e28="" class="tip__line-items" data-v-5fc78b94=""><div data-v-ab6ec970="" class="tip-pro-line-items tip-pro-line-items--default-template"><div data-v-ab6ec970="" class="tip-pro-line-items__item"><span data-v-ab6ec970="" class="tip-pro-line-items__item__label"><span data-v-ab6ec970=""><!----> <span data-v-ab6ec970="" class="tip-font">Donation to GBG</span></span></span> <span data-v-ab6ec970=""><span data-v-ab6ec970=""><!----> <strong data-v-ab6ec970="" class="tip-font">$0 USD</strong> <!----></span></span></div> <!----></div></div> <div data-v-dbab3e28="" data-v-5fc78b94="" class="tip__donate-button-wrap"><button data-v-283a50b8="" data-v-dbab3e28="" disabled="disabled" type="button" class="cs-button button button--action button--lg button--round button--donate tip-font cs-button--filled cs-button--round" data-v-5fc78b94="">
+        donate
+      </button></div></div></div>
+              
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  var loginButton = document.getElementById("loginButton");
+  var signupButton = document.getElementById("signupButton");
+  loginButton.addEventListener("click", function() {
+    window.location.href = "Login.html";
+  });
+  signupButton.addEventListener("click", function() {
+    window.location.href = "register.html";
+  });
+</script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

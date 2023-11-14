@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+        .btn-dark {
+    color: #fff; 
+}
+.image
+{
+  height:400px;
+  width:600px;
+}
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+ <script type="text/Javascript" src="./js/Js.js"></script>
+<body>
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="GBGLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+            <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+          </svg> NOVEDADES</a></li>
+          <li><a href="GtankeWLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg> GUIAS</a></li>
+          <li><a href="DonacionesLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+          </svg> DONACIONES</a></li>
+          <li><a href="#" class="nav-link px-2 text-white"></a></li>
+        </ul>
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+          <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        </ul>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+          <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+        </form>
+    
+            <div class="text-end">
+                <button type="submit" class="btn btn-outline-light me-2" id="AccountButton">Account</button>
+                <button type="submit" class="btn btn-warning" id="signupButton">Cerrar sesión</button>
+              </div>
+      </div>
+    </div>
+  </header>
+  
+  <div  class="filtros">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" class="filtros2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-right: 200px;">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+              </svg>
+       </button>
+       <div class="dropdown-menu"style="text-align: center;" >
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+         <a class="dropdown-item" href="#">------</a>
+       </div>
+       <li class="nav-item">
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                World Of Warcraft
+            </button>
+            <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+                <a class="dropdown-item" href="GtankeWLogin.html">Tanke</a>
+                <a class="dropdown-item" href="cazador log.html">cazador</a>
+                <a class="dropdown-item" href="mago log.html">Wizard</a>
+            </div>
+        </div>
+    </li>
+   
+            <li class="nav-item">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        Path of exile
+      </button>
+      <div class="dropdown-menu" style="text-align: center;">
+<a class="dropdown-item" href="GPoe1Login.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2Login.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3Login.html">wizard</a>
+      </div>
+            </li>
+            <li class="nav-item">
+             <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+        League of legends
+      </button>
+      <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GLol1Login.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2Login.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3Login.html">Runas Mago</a>
+      </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Dark Souls
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+      <a class="dropdown-item" href="Darksouls.1login.html">Caballero</a>
+      <a class="dropdown-item" href="Darksouls.2login.html">Guerrero</a>
+      <a class="dropdown-item" href="Darksouls.3login.html">Vagabundo</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Genshin Impact
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="GgenshinFurina.log.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.loghtml.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelanLog.html">Yelan</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    CS2
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Cs2 log.html">Aim</a>
+    <a class="dropdown-item" href="mov log.html">Movement</a>
+    <a class="dropdown-item" href="Line up log.html">Line UP</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Elden Ring
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+<a class="dropdown-item" href="Samurai log.html">Samurai</a>
+    <a class="dropdown-item" href="Guerreroel log.html">Guerrero</a>
+    <a class="dropdown-item" href="Bandido log.html">Bandido</a>
+    </div>
+    </li>
+    <li class="nav-item">
+     <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Albion Online
+    </button>
+    <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="Guerrero log.html">Tanke</a>
+    <a class="dropdown-item" href="Explorador log.html">Explorador</a>
+    <a class="dropdown-item" href="Magoal log.html">wizard</a>
+    </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <li><a >Consejos<p>PARA LOS JUGADORES MÁS EXPERIMENTADOS:</p></a></li>
+            <li>Estudio del Juego:
+Observa partidas profesionales y aprende de jugadores experimentados.
+Analiza tus propias partidas para identificar áreas de mejora.</li>
+      <li>Adaptabilidad:
+Adáptate a diferentes situaciones de juego y estilos de los oponentes.
+Cambia tu estrategia según la situación del juego y las decisiones del equipo enemigo.</li>
+      <li>Posicionamiento Inteligente:
+Aprende posiciones clave en los mapas para maximizar tu impacto en el juego.
+Varía tus posiciones para no ser predecible para los enemigos.</li>
+      <li> Mantén la Calma:
+Mantén la calma incluso en situaciones de presión.
+La toma de decisiones tranquila y consciente es crucial, especialmente en momentos críticos.</li><br><hr>
+
+
+      
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: center;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">CS2</h1>
+        <h2 style="text-align: center;">
+          Guia de AIM
+        </h2>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+    <br><img class="image"src="https://files.bo3.gg/uploads/news/9099/title_image/960x480-1e5cc4703e97abe18753513ecfff2484.webp"><br><br>
+<li>
+        El aim es un aspecto esencial que debes controlar en el Counter Strike 2, como en cualquier shooter que se precie. Dicho esto, no lo es todo y dominar otros aspectos del juego como la rotación en el mapa, el control de los humos y otros detalles te pueden hacer ganar una partida.
+</li>
+<br><br><img class="image"src="https://cdn.oneesports.gg/cdn-data/2023/09/cs2_aim_map.jpg"><br><br>
+<li> 
+      Es uno de los sitios más famosos dentro de la comunidad de Counter Strike, y me ha parecido muy interesante porque revela detalles que solo dan la experiencia. Recomiendan hacer uso de Aimbotz para ir practicando, pero teniendo unas pautas claras:
+
+Colocar la mira correctamente.
+Tipos de agarre del ratón.
+La sensibilidad.
+Rutinas para la puntería.
+Mejorar el “mental” o “mindset” cuando afrontamos partida competitiva.
+Constancia.
+En este sentido, quiero puntualizar que a mí lo que más me sirvió fue bajar la sensibilidad del ratón, lo que me permitió reducir el margen de error porque cuando te pones nervioso al aparecer el enemigo das movimientos erráticos. Precisamente, los jugadores profesionales tienen la mente bastante fría, lo que les permite centrarse más y no dejarse llevar por el medio a que les maten.  
+ </li>
+     <br> <img class="image"src="https://img.pccomponentes.com/pcblog/1697925600000/practicar-aim-counter-strike-2-4.jpg"><br><br>
+ <li>
+        Normalmente, son utilizados para calentar la muñeca antes de empezar en competitivo, algo que se viene haciendo desde hace años. Concretamente, recomiendo estos 3:
+
+gg. Básicamente, calentaréis contra bots y podéis elegir si se mueven o no.
+CS2 Aim Botz. Calentamiento con bots con distintas armas.
+GGPredict Training Hub. Sirve para todos los shooters.
+Tenéis en cada uno las guías o el F.A.Q para instalar estos mapas y poder usarlos, pero tened por seguro que tendréis que usar la carpeta de Steamapps tan famosa (importante para los comandos de CS:GO).
+</li>
+     <br> <img class="image"src="https://pbs.twimg.com/media/FywFynbXwAUBlR9.jpg:large"><br><br> 
+<li>
+    Tenemos 5 jugadores en cada equipo, pero esto no va de ir por libre, sino de jugar en equipo. Concretamente, tendremos 5 roles diferenciados.
+</li>
+     <br> <img class="image"src="https://img.pccomponentes.com/pcblog/1697925600000/practicar-aim-counter-strike-2-5.jpg"><br><br>
+<li>
+    AWP o sniper Se le denomina de esa manera porque suele ser el que se gasta el dinero para comprar la AWP, que es el rifle de precisión más potente: 1 disparo en el cuerpo = muerte. También puede jugar con Scout (es más barata y se necesita 2 tiros en el cuerpo para matar), pero sobretodo debe conocer cómo moverse y como meter tiros unscope, es decir, sin poner la mirilla.
+
+Hay distintos estilos dentro de este rol:
+
+Puedes entrar de avanzadilla (entry fragger), hacer 1 kill y resguardarte para que el resto del equipo entre. Para esto debes ser bueno y rápido.
+Ir el último (ojo con tener la bomba siendo terrorista) y dejar que entren los compañeros primero, aunque ojo con esto porque puedes hacer fuego amigo sin querer.
+Para ser AWP debes tener muy buena puntería, saber moverte, manejar bien la secundaria (pistola), y que el equipo confíe en ti porque es una de las armas más caras del juego. De hecho, puede que un compañero te la tenga que comprar porque tú no tengas dinero, así que estás modificando la economía del equipo para ti.
+</li>
+     <br> <img class="image"src="https://img.pccomponentes.com/pcblog/1697925600000/practicar-aim-counter-strike-2-7.jpg"><br><br>
+<li>
+      Entry Fragger Lo dice el propio nombre: el que entra y hace la primera kill. Suelen ser líderes y se conocen el mapa a la perfección, normalmente van con M4 o AK porque son armas muy polivalentes y que con buena aim… haces mucho daño.
+
+Se exponen a mucho riesgo, siendo vital la información que transmiten cuando sufren baja:
+
+Decir cuántos hay.
+Dónde están.
+Qué armas llevan.
+Cuántas nades han tirado.
+Es importante no ser un “llorica” o “flamer” si vas a ser entry fragger porque todo vocablo que no sea información útil va a perjudicar a tu equipo (no escuchan pasos, los desconcentras, etc.).
+</li>
+   <br>  <img class="image"src="https://img.pccomponentes.com/pcblog/1697925600000/practicar-aim-counter-strike-2-6.jpg"><br><br>
+<li>
+      Lurker Son los jugadores sigilosos que van por rutas alternativas en el mapa para pillar de sorpresa al enemigo, teniendo un rol adicional de “lootear” armas o equipamiento de otros enemigos para el fin del equipo (normalmente AK, M4 o AWP).
+
+Una maniobra muy famosa es que todo el equipo “Terro” ataque en una “A” y que el lurker, pasados los minutos vaya a plantar bomba él solo a “B”. Es una maniobra de señuelo, haciendo creer a los CT que todos van “A”, basculen a dicha zona y el terro plante en “B”.
+
+De esta manera, el lurker puede esconderse para cuando quieran defusar o desactivar la bomba, hacer alguna kill y los terros entretengan a los CTs en “A” mientras el tiempo de desactivación va bajando.
+</li>
+     <br> <img class="image"src="https://img.pccomponentes.com/pcblog/1697925600000/practicar-aim-counter-strike-2-8.jpg"><br><br>
+<li>
+        Support El Support es el que va con todos los humos, flases y nades para apoyar al Entry Fragger a la hora de atacar primero. Este rol se preocupa por atacar o defender con equipamiento, más que con aim y armas potentes.
+
+Solemos ver a los supports con subfusiles y escopetas cuando la economía está floja en el equipo, debiendo priorizar en quien tiene más aim, más decisión y más expertise en el juego.
+
+De ahí que os digamos que practicar el aim en Counter Strike 2 es importante, pero no lo es todo.
+</li>
+      <br><img class="image"src="https://assetsio.reedpopcdn.com/counter-strike-2-headline-cs2.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"><br><br>
+<li>
+       Líder o capitán
+Nadie se lo autoasigna, sino que suelen ser los jugadores del equipo quienes deciden seguir sus pasos o nombrarlo como tal. Es quien más sabe, mejor se conoce el mapa y quien más experiencia en el juego suele tener.
+
+Es un error designarlo porque mate mucho, sino que debe liderar al equipo a la victoria, emitiendo instrucciones según ocurren cosas en el mapa. Coloquialmente se hace caso al jugador que más mata y “carrilea” al equipo por ser un fragger, pero este perfil de jugador encaja mejor en Entry Fragger o AWP (si usa AWP).
+</li><br><hr>
+
+<h1>Advertencias</h1><hr>
+<li>Tiempo de Juego. El juego puede ser muy absorbente, y es importante administrar tu tiempo de juego para equilibrarlo con otras responsabilidades, como el trabajo, los estudios y las actividades sociales.</li> 
+<li>Contenido Violento CS2 es un juego de disparos en primera persona con contenido violento. Ten en cuenta que algunas personas pueden encontrar este tipo de contenido perturbador.</li> 
+<li>Comportamiento Ético en el Juego. Asegúrate de seguir las reglas del juego y mantener un comportamiento ético. El juego en equipo y el respeto hacia los demás jugadores son fundamentales.</li> 
+<li>Comunicación en Línea La comunicación en línea puede ser intensa y, en ocasiones, incluir lenguaje ofensivo. Prepárate para encontrarte con diferentes estilos de comunicación y utiliza funciones de mute si es necesario.</li><hr>
+
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    var AccountButton = document.getElementById("AccountButton");
+    var signupButton = document.getElementById("signupButton");
+    AccountButton.addEventListener("click", function() {
+      window.location.href = "#";
+    });
+    signupButton.addEventListener("click", function() {
+      window.location.href = "GBG.html";
+    });
+  </script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>

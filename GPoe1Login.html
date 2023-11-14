@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="logo sin nombre.png" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="text/Javascript" src="./js/Js.js"></script>
+  <style>
+  
+        .btn-dark {
+    color: #fff; 
+}
+
+
+.dropdown-item {
+    color: #cf8f17; 
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #cf8f17;
+    color: #fff; 
+}
+    #signupButton {
+    background-color: #cf8f17;
+}
+     .listasimple
+    {
+       height: 100px ;
+       width: 150px;
+    }
+
+ .sidebar ul{
+    
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .footer
+     {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 20px;
+      
+      bottom: 0;
+      width: 100%;
+     }
+
+ .grid-container
+ {
+  box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75):
+  border-radius:4px;
+  padding: 10px;
+  text-align: center;
+ }
+ textarea
+
+ {       width: 100%;       height: 200px;  
+         margin-top: 10px;
+ }
+
+
+  </style>
+  <title>GuideBuildGenerator</title>
+</head>
+ <!-- pagina principal sin login -->
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="GBGLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z"/>
+                <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+              </svg> NOVEDADES</a></li>
+              <li><a href="GtankeWLogin.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+              </svg> GUIAS</a></li>
+              <li><a href="Donaciones.html" class="nav-link px-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+              </svg> DONACIONES</a></li>
+              <li><a href="#" class="nav-link px-2 text-white"></a></li>
+            </ul>
+            <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+              <img src="gbglogo.png" width="120" height="50" alt="" class="rounded" alt="Cinque Terre"></a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">  
+              <input type="search" class="form-control form-control-dark" placeholder="Search...                    🔍" aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="submit" class="btn btn-outline-light me-2" id="AccountButton">Account</button>
+              <button type="submit" class="btn btn-warning" id="signupButton">Cerrar sesión</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+  
+  <div  class="filtros">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid" class="filtros2">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 200px;">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+          </svg>
+   </button>
+   <div class="dropdown-menu"style="text-align: center;" >
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+     <a class="dropdown-item" href="#">------</a>
+   </div>
+   <li class="nav-item">
+    <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="wowDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+            World Of Warcraft
+        </button>
+        <div class="dropdown-menu" aria-labelledby="wowDropdown" style="text-align: center;">
+          <a class="dropdown-item" href="GtankeWLogin.html">Tanke</a>
+          <a class="dropdown-item" href="cazador log.html">cazador</a>
+          <a class="dropdown-item" href="mago log.html">Wizard</a>
+        </div>
+    </div>
+</li>
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    Path of exile
+  </button>
+  <div class="dropdown-menu" style="text-align: center;">
+    <a class="dropdown-item" href="GPoe1Login.html">Tanke</a>
+    <a class="dropdown-item" href="GPoe2Login.html">Supp</a>
+    <a class="dropdown-item" href="GPoe3Login.html">wizard</a>
+  </div>
+        </li>
+        <li class="nav-item">
+         <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+    League of legends
+  </button>
+  <div class="dropdown-menu"style="text-align: center;" >
+    <a class="dropdown-item" href="GLol1Login.html">Runas Tanke</a>
+    <a class="dropdown-item" href="GLol2Login.html">Runas Supp</a>
+    <a class="dropdown-item" href="GLol3Login.html">Runas Mago</a>
+  </div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Dark Souls
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Darksouls.1login.html">Caballero</a>
+  <a class="dropdown-item" href="Darksouls.2login.html">Guerrero</a>
+  <a class="dropdown-item" href="Darksouls.3login.html">Vagabundo</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Genshin Impact
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="GgenshinFurina.log.html">Furina</a>
+  <a class="dropdown-item" href="GgenshinHutao.loghtml.html">HuTao</a>
+  <a class="dropdown-item" href="GgenshinYelanLog.html">Yelan</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+CS2
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Cs2 log.html">Aim</a>
+  <a class="dropdown-item" href="mov log.html">Movement</a>
+  <a class="dropdown-item" href="Line up log.html">Line UP</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Elden Ring
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Samurai log.html">Samurai</a>
+    <a class="dropdown-item" href="Guerreroel log.html">Guerrero</a>
+    <a class="dropdown-item" href="Bandido log.html">Bandido</a>
+</div>
+</li>
+<li class="nav-item">
+ <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" margin-right: 10px;">
+Albion Online
+</button>
+<div class="dropdown-menu"style="text-align: center;" >
+  <a class="dropdown-item" href="Guerrero log.html">Tanke</a>
+  <a class="dropdown-item" href="Explorador log.html">Explorador</a>
+  <a class="dropdown-item" href="Magoal log.html">wizard</a>
+</div>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <h2>Ayuda para comunidad</h2>
+        <ul>
+          <li><a>Consejos</a>
+              <b><h5>Conoce tu Contenido:</h5></b> 
+            <li>Comprende el tipo de enemigos y el daño que enfrentarás en diferentes áreas del juego. Ajusta tus resistencias y defensas en consecuencia.</li><br>
+            <b>  <h5> Actualiza tu Equipo Regularmente:</h5></b> 
+            <li>Mantén tus equipos actualizados a medida que avanzas en el juego. Busca mejoras en armaduras, armas y joyas para fortalecer tus estadísticas defensivas y ofensivas.</li><br>
+            <b>  <h5>Diversifica tus Habilidades Defensivas:</h5></b> 
+            <a href="https://www.pathofexile.com" ><img class="fotopoe2" src="https://cdn.akamai.steamstatic.com/steam/apps/238960/header.jpg?t=1698785805" ></a>
+            <li>No te limites a una sola habilidad defensiva. Combina diferentes habilidades y estrategias para adaptarte a situaciones variadas.</li><br>
+            <b>  <h5>Gestión de Maná y Energía:</h5></b> 
+            <li>Actualizaciones del Juego: Mantente informado sobre las actualizaciones del juego. Las modificaciones en las runas y sus estadísticas pueden cambiar la eficacia de ciertas combinaciones. Asegúrate de revisar las notas de parche para estar al tanto de los cambios.</li><br>
+            <b><h5>Aprende de Otros Jugadores:</h5></b> 
+            <li>Explora foros y guías en línea para obtener ideas y consejos de jugadores experimentados. La comunidad de Path of Exile es muy activa y compartirá información valiosa.</li><br>
+            <b>  <h5>Evoluciona tu Construcción:</h5></b> 
+            <li>No dudes en ajustar tu construcción según evoluciona tu personaje y a medida que enfrentas nuevos desafíos. La flexibilidad es clave.</li><br>
+            <b>   <h5>Mantén el Equilibrio:</h5></b> 
+            <li>No te concentres solo en la defensa. Asegúrate de tener suficiente potencial ofensivo para eliminar amenazas antes de que se conviertan en problemas.</li><br>
+            <b>  <h5>Prueba en Ligas Temporales:</h5></b> 
+            <li>Las ligas temporales ofrecen nuevos desafíos y mecánicas. Participar en ellas puede proporcionarte una experiencia fresca y recompensas únicas.</li><br>
+            <b>   <h5>Mapas y Endgame:</h5></b> 
+            <li>Una vez que alcances el endgame, explora mapas y jefes. Estos desafíos requerirán un equilibrio cuidadoso entre daño y supervivencia.</li><br>       
+            <a href="https://www.pathofexile.com" ><img class="fotopoe2" src="https://cdn.akamai.steamstatic.com/steam/apps/238960/header.jpg?t=1698785805" ></a>
+            <b>  <h5>Sigue Aprendiendo:</h5></b> 
+            <li>Path of Exile es un juego complejo con muchas capas. Sigue aprendiendo sobre las mecánicas del juego, actualizaciones y estrategias para mejorar constantemente.</li><br>
+             <p>Recuerda que la adaptabilidad y la paciencia son clave en Path of Exile.
+                 Experimenta con diferentes habilidades y enfoques, y no dudes en ajustar tu construcción según sea necesario. ¡Diviértete explorando el mundo de Wraeclast!</p><hr>
+
+      <a class="btn btn-primary collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Tienes alguna duda?
+  </a>
+  <div class="collapse" id="collapseExample" style="">
+  <div class="card card-body">
+    <li><a >Contactanos:</a></li>
+         <form>
+          <input type="email" name="correo" maxlength="40" 
+          placeholder="example@gmail.com" required ></input>
+           <textarea rows="4" required cols="40" placeholder="Escribe aquí..."></textarea>
+          <input type="submit" name="boton" value="Enviar">
+          </form>
+         </div>
+         </div>
+
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="col-md-9" style="text-align: center;" >
+      <main class="contenido">
+        <h1 style="text-align: center;">Path of Exile</h1>
+        <h2 style="text-align: center;">
+          Guia de Tanke
+        </h2>
+        <p>
+
+
+<ul class="list-unstyled">
+  
+
+  <p style="text-align:center;">
+    <ul>
+
+    <p>
+        <br><h5>Selecciona la Clase Adecuada:</h5>
+      <li>  
+        Las clases Marauder, Templar y Jugernaut son excelentes opciones para construir un tanque debido a sus nodos de habilidad que mejoran la resistencia y la vida.
+      </li><br>
+          
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/i0RPAbh4BJk?si=ePCQjpKGv3Avpkiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <br> <br><h5>Atributos Prioritarios:</h5>
+      <li>  
+       <b> Vida (Life):</b> Un tanque debe tener una gran cantidad de vida para resistir el daño. Aumenta tus puntos de vida a través de nodos de habilidad y equipos.
+       <p><b>Armour y Evasión:</b> La armadura reduce el daño físico, mientras que la evasión ayuda a evitar los ataques. Busca un equilibrio entre ambos o elige uno según tu preferencia.</p>
+        
+      </li>
+
+      <br><h5>Resistencias Elementales:</h5>
+      <li>  
+        Asegúrate de tener altas resistencias a los elementos (fuego, frío, rayo). Los enemigos en Path of Exile infligen mucho daño elemental, por lo que es crucial mitigar esto.
+      </li>
+      <img class="fotopoe" src="https://image.api.playstation.com/cdn/UP4781/CUSA11924_00/FREE_CONTENTzdpJ3sp5nlnyeLns8o1B/mSeEPPtU_PREVIEW_SCREENSHOT8_171472.jpg">
+      <br><h5>Regeneración de Vida y Escudos:</h5>
+      <li>  
+        Invierte en nodos de regeneración de vida y escudos (si decides utilizar un escudo en lugar de armas de dos manos). La regeneración constante ayuda a mantener tu salud en combate.
+      </li>
+
+      <br><h5>Bloqueo y Esquiva:</h5>
+      <li>  
+        Considera la posibilidad de aumentar tu bloqueo con un escudo y habilidades de bloqueo. También puedes mejorar tu capacidad de esquiva para evitar algunos ataques.
+      </li>
+      <img class="fotopoe" src="https://www.pathofexile.com/protected/image/promo/atlas/ss/Maps/Screenshot3.jpg?key=QpvOBbhByadXTF46cjODjw">
+      <br> <h5>Gemas de Apoyo:</h5>
+      <li>  
+        Utiliza gemas de apoyo que mejoren tu defensa, como "Fortify" para reducir el daño recibido, "Endurance Charge on Melee Stun" para obtener acumulaciones de carga de resistencia, y "Cast when Damage Taken" para activar habilidades defensivas automáticamente.
+      </li>
+
+      <br><h5>Habilidades de Warcry:</h5>
+      <li>
+        Algunos Warcries, como "Enduring Cry", proporcionan beneficios defensivos, como aumentar tu resistencia y regeneración de vida.
+      </li>
+      <img class="fotopoe" src="https://i.ytimg.com/vi/lyf-ip3HzTg/maxresdefault.jpg">
+      <br> <h5>Equipo:</h5>
+      <li>  
+        Busca equipos con altas defensas y resistencias. Un buen equilibrio de armadura, escudos y resistencias es clave.
+        Asegúrate de tener una buena arma que te permita infligir daño decente mientras mantienes una sólida defensa.
+      </li>
+
+      <br><h5>Flasks (Frasco):</h5>
+      <li>  
+        Utiliza frascos que restauren vida, escudos y eliminen estados alterados. Los frascos son esenciales para sobrevivir en situaciones difíciles.
+      </li>
+      <img  class="fotopoe" src="https://multiplayer.net-cdn.it/thumbs/images/2023/06/08/path-of-exile-2_jpg_1600x900_crop_q85.jpg">
+      <br><h5>Planificación del Árbol de Habilidades:</h5>
+      <li>  
+        Planifica tu árbol de habilidades de manera que priorice la vida, las resistencias y las habilidades defensivas. Puedes utilizar herramientas en línea como Path of Building para optimizar tu construcción.
+        Recuerda que la versatilidad es clave en Path of Exile. A medida que avanzas, ajusta tu construcción según tu estilo de juego y las demandas del contenido que estás enfrentando. ¡Buena suerte, Exiliado!
+      </li>
+
+</p>
+    </ul>
+  </li>
+</ul>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+  var AccountButton = document.getElementById("AccountButton");
+  var signupButton = document.getElementById("signupButton");
+  AccountButton.addEventListener("click", function() {
+    window.location.href = "#";
+  });
+  signupButton.addEventListener("click", function() {
+    window.location.href = "GBG.html";
+  });
+</script>
+</body>
+<footer id="footer" class="footer bg-dark text-white">
+  <div id="carouselExampleInterval1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <p> <a href="https://www.monsterenergy.com/es-cl/"> <img src="https://www.monsterenergy.com/img/home/monster-logo.png" style="margin-right:50px; margin-left:50px ;"></a>
+     <a href="https://www.redbull.com/cl-es/energydrink/red-bull-red-edition?rbcid=15830433331&utm_source=Adwords&utm_medium=g&utm_campaign=15830433331&utm_content=573729694268&gclid=Cj0KCQiAo7KqBhDhARIsAKhZ4uhNjokHG6JfCI2R3rm1adspbaNJAMDl4weWE31eSVlOpAWLVWPdhmAaAnOXEALw_wcB">
+      <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"></a> </p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="#">Contactanos</a> 
+      <hr>
+      <p>Acerca De Nosotros: <a>Terms</a></p> 
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <p>¿Buscas Que Jugar? </p>
+          <a>click aqui</a>
+          <p>v</p>
+      <p> <a href="https://neskolt.github.io/SimplisticGames.github.io/"><img class="listasimple" src="0.png" ></a></p>
+      <p> GBG Copyright© [2023] </p>
+    </div>
+    <div class="carousel-item"> 
+      <p><a href="https://www.beastphilanthropy.org/"><img  src="https://www.beastphilanthropy.org/images/logo.png"></a>
+        <a href=" https://admision.virginiogomez.cl/"><img src="https://intranet.virginiogomez.cl/intranet/assets/images/logo-ipvg.png"></a> </p>
+        <p> GBG Copyright© [2023] </p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">HOLAs</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </footer>
+</div>
+</html>
